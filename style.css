@@ -1,0 +1,166 @@
+
+
+@keyframes transitionNext{
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    to{
+        transform: translateX(-100px);
+        opacity: 0
+    }
+}
+
+@keyframes transitionNextReverse{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX();
+        opacity: 1
+    }   
+}
+
+@keyframes transitionPrev {
+    from{
+        transform: translateX(0px);
+        opacity: 1
+    }
+
+    to{
+        transform: translateX(100px);
+        opacity: 0
+    }
+}
+
+@keyframes transitionPrevReverse {
+    from{
+        transform: translateX(-100px);
+        opacity: 0
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/*===============GLOBAL & BODY============*/
+
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: #90CBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*==============FIELDSET=============*/
+
+
+
+form{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 207px;
+    height: 275px;
+
+
+}
+
+
+input[type='text']{
+    width: 200px;
+    
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+input{
+    border:none;
+    border-bottom: 2px solid black;
+    outline:none;
+    margin: 12px;
+}
+
+legend{
+    font-size: 1.2em;
+    font-weight: bold;
+    background: none
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+div#gender{
+    display: block;
+}
+
+button{
+    width: 70px;
+    background-color: #90CBFB;
+    border:none;
+    border-radius: 5px;
+
+    width: 100px;
+    height: 30px;
+
+    margin: 22px;
+
+    transition: 1s;
+
+    
+}
+
+button:hover{
+    background-color: #1291f8;
+    box-shadow: 1px 1px 5px black;
+}
+
+
+#dados-pessoais{
+    display: none;
+}
+
+#localidade{
+    display: none;
+}
+
+#finalizar{
+    display:none
+}
+
+#finalizar > button{
+    width: 200px;
+    height: 100px;
+
+    font-size: 2em;
+}
+
+
+
+
+
+
+footer{
+    opacity: 0.5
+}
