@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | AutomaTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <form action="">
+            <aside class='etapas' id='infomações'>
+
+            
+                <legend>Infomações Básicas</legend>
+                    <div id="name">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Ex: Paulo">
+                        <label for="last name">Sobrenome</label>
+                        <input type="text" name="last name" id="last name" placeholder='Ex: Henrique'> 
+                    </div>
+                    
+                    <div id="birthday">
+                        <label for="birthday">Data de Nascimento:</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+                   
+                    <div id="gender">
+                        <p>Gênero</p>
+                        <input type="radio" name="gender" id="man">
+                        <label for="man">Homem</label>
+                        <input type="radio" name="gender" id="woman">
+                        <label for="woman">Mulher</label>
+                    </div>
+
+
+            </aside>
+
+            <aside class='etapas' id='dados-pessoais'>
+
+            
+                <legend>Dados Pessoais</legend>
+                    <div id="name">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder='xxxxx@xxxx.com'>
+                        <label for="password">Crie uma senha</label>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    
+                    <div id="number">
+                        <label for="number">Telefone:</label>
+                      <input type="text" name="numberphone" id="number" placeholder='1195959595'>
+                    </div>
+                   
+
+            </aside>
+
+            <aside class='etapas' id='localidade'>
+
+            
+                <legend>Localização</legend>
+                    <div id='estado'>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                            <option value="são paulo">São Paulo</option>
+                            <option value="rio de janeiro">Rio de Janeiro</option>
+                            <option value="minas gerais">Minas Gerais</option>
+                            <option value="goias">Goías</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="paraná">Paraná</option>
+                        </select>
+                    </div>
+
+                    <div id='cidade'>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="city" id="cidade" placeholder='Ex:Tangamangapio'>
+                    </div>
+
+                    <div id='numero'>
+                        <label for="number">Número:</label>
+                        <input type="number" name="number" id="number" min="1" max='999' placeholder='77'>
+                    </div>
+
+                    <div id='complemento'>
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" name="complemento" id="complemento" placeholder='Ex: prédio'>
+                    </div>
+                   
+
+            </aside>
+
+            <aside class='etapas' id='finalizar'>
+
+                <h1>Desejar finalizar a inscrição?</h1>
+
+                <button type="submit">Finalizar</button>
+            </aside>
+
+        </form>
+        <button id='prev'>Anterior</button>
+        <button id='next'>Próximo</button>
+
+    </main>
+
+
+
+    <footer>
+        <h2>Programado por @Opaulo_oficial</h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
